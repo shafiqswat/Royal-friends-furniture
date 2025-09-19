@@ -98,25 +98,6 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Contact Info */}
-          <div className='hidden lg:flex items-center space-x-4'>
-            <a
-              href={`https://wa.me/971555088276?text=Hello! I'm interested in your furniture services.`}
-              target='_blank'
-              rel='noopener noreferrer'
-              className={`flex items-center space-x-2 text-sm transition-colors ${
-                isScrolled
-                  ? "text-gray-600 hover:text-wood-oak"
-                  : "text-white hover:text-white/80"
-              }`}>
-              <span
-                className={`w-2 h-2 ${
-                  isScrolled ? "bg-green-500" : "bg-white"
-                } rounded-full`}></span>
-              <span>WhatsApp</span>
-            </a>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -152,15 +133,6 @@ export default function Header() {
                   </button>
                 );
               })}
-              <div className='border-t border-gray-200 pt-3 mt-3'>
-                <a
-                  href={`https://wa.me/971555088276?text=Hello! I'm interested in your furniture services.`}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='block px-3 py-2 text-sm text-gray-600 hover:text-wood-oak transition-colors'>
-                  📱 WhatsApp: {companyInfo.mobile1}
-                </a>
-              </div>
             </div>
           </div>
         )}
