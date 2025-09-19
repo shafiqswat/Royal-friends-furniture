@@ -1,0 +1,152 @@
+/** @format */
+
+@import "tailwindcss";
+
+/* Custom wood-themed color palette */
+@theme {
+  --color-wood-oak: #8b4513;
+  --color-wood-mahogany: #c04000;
+  --color-wood-walnut: #3c2415;
+  --color-wood-pine: #f4e4bc;
+  --color-wood-cedar: #8b7355;
+  --color-wood-cherry: #a0522d;
+  --color-wood-ash: #e6d3a3;
+  --color-wood-ebony: #2f1b14;
+  --color-accent-gold: #d4af37;
+  --color-accent-bronze: #cd7f32;
+  --color-neutral-cream: #f5f5dc;
+  --color-neutral-beige: #f0e68c;
+  --color-neutral-taupe: #d2b48c;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.5s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-wood-oak);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wood-mahogany);
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-wood-oak hover:bg-wood-mahogany text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply bg-accent-gold hover:bg-accent-bronze text-wood-ebony font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 transform hover:scale-105 hover:shadow-2xl;
+}
+
+/* Text gradients */
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-wood-oak),
+    var(--color-accent-gold)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
