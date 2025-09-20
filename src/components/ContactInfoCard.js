@@ -72,24 +72,6 @@ export default function ContactInfoCard() {
           </div>
         </div>
       </div>
-
-      <div className='mt-8 pt-6 border-t border-gray-200'>
-        <h4 className='font-semibold text-wood-ebony mb-3'>Business Hours</h4>
-        <div className='space-y-2 text-sm text-gray-600'>
-          <div className='flex justify-between'>
-            <span>Monday - Friday</span>
-            <span>9:00 AM - 9:00 PM</span>
-          </div>
-          <div className='flex justify-between'>
-            <span>Saturday</span>
-            <span>9:00 AM - 8:00 PM</span>
-          </div>
-          <div className='flex justify-between'>
-            <span>Sunday</span>
-            <span>10:00 AM - 7:00 PM</span>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

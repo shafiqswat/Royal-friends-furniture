@@ -2,7 +2,7 @@
 
 // Company Information
 export const companyInfo = {
-  name: "Royal Friends Furniture",
+  name: "Royal Friends ",
   tagline: "#1 Best Furniture Store in Dubai",
   description:
     "Royal Friends Furniture offers the finest quality furniture in Dubai. We specialize in luxury home and office furniture with exceptional craftsmanship and unbeatable prices.",

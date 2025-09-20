@@ -51,20 +51,17 @@ export default function Header() {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16 lg:h-20'>
           {/* Logo */}
-          <div className='flex items-center space-x-3'>
-            <div className='flex items-center justify-center w-10 h-10 bg-gradient-to-br from-wood-oak to-accent-gold rounded-lg'>
-              <CrownIcon className='w-6 h-6 text-white' />
+          <div className='flex items-center space-x-2 sm:space-x-3'>
+            <div className='flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-wood-oak to-accent-gold rounded-lg sm:rounded-xl flex-shrink-0 shadow-md'>
+              <CrownIcon className='w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 text-white' />
             </div>
-            <div className='hidden sm:block'>
-              <h1 className='text-xl lg:text-2xl font-bold text-gradient'>
-                {companyInfo.name}
-              </h1>
-              <p
-                className={`text-xs ${
-                  isScrolled ? "text-gray-600" : "text-white/80"
-                }`}>
-                Premium Furniture Store
-              </p>
+            <div className='flex flex-col justify-center min-h-[32px] sm:min-h-[40px] lg:min-h-[48px]'>
+              <div className='text-sm sm:text-base lg:text-xl font-bold text-gradient leading-none tracking-tight'>
+                Royal Friends
+              </div>
+              <div className='text-xs sm:text-sm lg:text-lg font-semibold text-gradient leading-none tracking-wide mt-0.5'>
+                Furniture
+              </div>
             </div>
           </div>
 

@@ -85,7 +85,7 @@ export default function HeroSection() {
                 </span>
               </div>
 
-              <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight'>
+              <h1 className='text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight'>
                 {heroData.title}
               </h1>
 
@@ -111,18 +111,32 @@ export default function HeroSection() {
             </motion.div>
 
             {/* CTA Buttons */}
-            <motion.div
-              variants={itemVariants}
-              className='flex flex-col sm:flex-row gap-4'>
-              <a
-                href={`https://wa.me/971555088276?text=Hello! I'm interested in your furniture services.`}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='btn-primary flex items-center justify-center space-x-2 group'>
-                <span>{heroData.ctaText}</span>
-                <ArrowRightIcon className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
-              </a>
-            </motion.div>
+            <div className='flex flex-col sm:flex-row gap-4'>
+              <motion.div
+                variants={itemVariants}
+                className='flex flex-col sm:flex-row gap-4'>
+                <a
+                  href={`https://www.instagram.com/royalfriendsfurnitur/`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='btn-primary flex items-center justify-center space-x-2 group'>
+                  <span>Start Exploring</span>
+                  <ArrowRightIcon className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
+                </a>
+              </motion.div>
+              <motion.div
+                variants={itemVariants}
+                className='flex flex-col sm:flex-row gap-4'>
+                <a
+                  href={`https://wa.me/971555088276?text=Hello! I'm interested in your furniture services.`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='btn-primary flex items-center justify-center space-x-2 group'>
+                  <span>Order Now</span>
+                  <ArrowRightIcon className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
+                </a>
+              </motion.div>
+            </div>
           </div>
 
           {/* Right Content - Image Gallery */}
